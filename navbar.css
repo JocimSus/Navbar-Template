@@ -23,10 +23,6 @@ a {
   font-size: 1rem;
 }
 
-a:hover {
-  color: orange;
-}
-
 /* Header */
 header {
   position: relative;
@@ -35,7 +31,7 @@ header {
 
 .navbar {
   width: 100%;
-  height: 60px;
+  height: 80px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -43,15 +39,17 @@ header {
 }
 
 .navbar .logo a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .navbar .links {
   margin-left: auto;
-  margin-right: 2rem;
   display: flex;
-  gap: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  gap: 5rem;
+  font-weight: bold;
 }
 
 .navbar .toggle-btn {
@@ -61,26 +59,23 @@ header {
   display: none;
 }
 
-.action-btn {
-  background-color: orange;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: scale 0.2s ease;
+.floating-island {
+  height: 80%;
+  background-color: #f9f9f9;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
 }
 
-.action-btn:hover {
-  scale: 1.05;
-  color: #fff;
+.floating-island .links a {
+  color: black;
+  font-size: 20px;
 }
 
-.action-btn:active {
-  scale: 0.95;
+.floating-island .links li:hover,
+.floating-island .links li.active {
+  background-color: lightblue;
+  height: 1.5rem;
 }
 
 /* Hero */
@@ -106,7 +101,7 @@ section#hero {
   right: 2rem;
   top: 60px;
   height: 0;
-  width: 300px;
+  width: 200px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 10px;
@@ -115,7 +110,7 @@ section#hero {
 }
 
 .dropdown-menu.open {
-  height: 220px;
+  height: 200px;
 }
 
 .dropdown-menu li {
@@ -125,16 +120,9 @@ section#hero {
   justify-content: center;
 }
 
-.dropdown-menu .action-btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 /* Responsive Design */
 @media (max-width: 992px) {
-  .navbar .links,
-  .navbar .action-btn {
+  .navbar .links {
     display: none;
   }
 
@@ -144,6 +132,10 @@ section#hero {
 
   .dropdown-menu {
     display: block;
+  }
+
+  .floating-island {
+    background-color: transparent;
   }
 }
 
