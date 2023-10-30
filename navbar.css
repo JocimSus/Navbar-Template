@@ -27,6 +27,11 @@ header {
   padding: 0 2rem;
 }
 
+.fa-solid.fa-bars,
+.fa-solid.fa-xmark {
+  color: black;
+}
+
 .navbar {
   width: 100%;
   height: 80px;
@@ -93,7 +98,7 @@ section#hero {
   align-items: center;
   justify-content: center;
   color: black;
-  margin-bottom: 10vh;
+  margin-bottom: 20vh;
 }
 
 section#hero img {
@@ -133,7 +138,7 @@ footer p {
   top: 60px;
   height: 0;
   width: 200px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(80, 80, 80, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
@@ -141,7 +146,7 @@ footer p {
 }
 
 .dropdown-menu.open {
-  height: 200px;
+  height: 160px;
 }
 
 .dropdown-menu li {
@@ -149,6 +154,11 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.dropdown-menu li a {
+  color: black;
+  font-weight: bold;
 }
 
 /* Responsive Design */
