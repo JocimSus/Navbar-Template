@@ -7,10 +7,8 @@
 
 body {
   height: 100vh;
-  background-color: #000;
-  background-image: url("https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80");
-  background-size: cover;
-  background-position: center;
+  background-color: #f5f5f5;
+  overflow-y: hidden;
 }
 
 li {
@@ -41,6 +39,7 @@ header {
 .navbar .logo a {
   font-size: 2rem;
   font-weight: bold;
+  color: black;
 }
 
 .navbar .links {
@@ -48,7 +47,7 @@ header {
   display: flex;
   padding-left: 2rem;
   padding-right: 2rem;
-  gap: 5rem;
+  gap: 3rem;
   font-weight: bold;
 }
 
@@ -61,7 +60,7 @@ header {
 
 .floating-island {
   height: 80%;
-  background-color: #f9f9f9;
+  background-color: white;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -75,23 +74,55 @@ header {
 .floating-island .links li:hover,
 .floating-island .links li.active {
   background-color: lightblue;
-  height: 1.5rem;
 }
 
 /* Hero */
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 section#hero {
-  height: calc(100vh - 60px);
+  height: 60vh;
+  width: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  color: #fff;
+  color: black;
+  margin-bottom: 10vh;
+}
+
+section#hero img {
+  height: inherit;
+  width: inherit;
 }
 
 #hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #212329;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer h2,
+footer p {
+  margin-left: 1rem;
 }
 
 /* Dropdown Menu */
