@@ -8,15 +8,3 @@ toggleBtn.onclick = () => {
 
   toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
-
-const links = document.querySelectorAll(".navbar .links li");
-
-links.forEach(function (link) {
-  link.addEventListener("click", function () {
-    links.forEach(function (el) {
-      el.classList.remove("active");
-    });
-
-    link.classList.add("active");
-  });
-});

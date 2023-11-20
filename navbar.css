@@ -21,6 +21,10 @@ a {
   font-size: 1rem;
 }
 
+img {
+  object-fit: cover;
+}
+
 /* Header */
 header {
   position: relative;
@@ -28,7 +32,9 @@ header {
 }
 
 .fa-solid.fa-bars,
-.fa-solid.fa-xmark {
+.fa-solid.fa-xmark,
+.fa.fa-arrow-circle-left,
+.fa.fa-arrow-circle-right {
   color: black;
 }
 
@@ -48,12 +54,12 @@ header {
 }
 
 .navbar .links {
-  margin-left: auto;
   display: flex;
   padding-left: 2rem;
   padding-right: 2rem;
   gap: 3rem;
   font-weight: bold;
+  align-items: center;
 }
 
 .navbar .toggle-btn {
@@ -74,11 +80,14 @@ header {
 .floating-island .links a {
   color: black;
   font-size: 20px;
+  margin: auto;
 }
 
-.floating-island .links li:hover,
-.floating-island .links li.active {
-  background-color: lightblue;
+.link-hover:hover {
+  height: 2rem;
+  background-color: aquamarine;
+  border-radius: 50px;
+  display: flex;
 }
 
 /* Hero */
@@ -92,24 +101,47 @@ main {
 
 section#hero {
   height: 60vh;
-  width: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: black;
   margin-bottom: 20vh;
+  overflow-x: hidden;
+}
+
+.right-button {
+  float: right;
+  width: 100%;
+  padding-right: 2rem;
+}
+.left-button {
+  float: left;
+  width: 100%;
+  padding-left: 2rem;
 }
 
 section#hero img {
-  height: inherit;
-  width: inherit;
+  height: 100%;
+  width: 75%;
 }
 
-#hero h1 {
+.fa.fa-arrow-circle-right {
+  float: right;
+}
+
+.study-material {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 50px;
+  padding: 1.5rem 0.5rem 0.5rem 1.5rem;
+}
+
+/* #hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-}
+} */
 
 /* Footer */
 footer {
